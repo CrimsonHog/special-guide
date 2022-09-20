@@ -1,0 +1,27 @@
+.navbar-brand {
+  text-indent: 25px;
+}
+
+.form-group {
+  text-indent: 20px;
+}
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding-top: 50px;
+  padding-left: 180px;
+}
+
+#btnName{
+padding-top: 5px;
+}
+
+body{ 
+  background: url(https://i.pinimg.com/736x/01/05/94/01059448b7a429b6632a1739c804d8c0.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
