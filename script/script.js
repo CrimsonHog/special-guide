@@ -4,10 +4,13 @@ $(function() {
   
     $('#btnName').click(function() {
         userName = $('#userName').val(); 
-        nameMsg = "Your spirit animal is: ";
+        nameLength = getStringLength(userName);
+        nameMsg = "Your spirit animal is: The Fox";
         $('#nameOutput').append(nameMsg + nameReverse + "<br/>"); 
         console.log(thirdLetter(userName)); 
-        stringArrayPosition(userName); 
+        stringArrayPosition(userName);
+        
+
         });
 
         $('#btnClear').click(function(){
@@ -15,6 +18,11 @@ $(function() {
             clearElement("#userName", "input");})
        function getStringLength(stringVal){
        var stringLength = stringVal.length; 
+       return stringLength; 
+    }
+
+    function getStringLength(stringVal){
+        var stringLength = stringVal.length; 
        return stringLength; 
     }
 

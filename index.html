@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Delta Cheese - 376</title>
+  <title>Delta Cheese - 376</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="style/style.css">
 
@@ -24,8 +24,20 @@
             <div class="form-group">
              <label for="userName" style='color:orange'>Enter your name if you wish to know the truth.</label>
                 <input type="text" class="form-control" id="userName">
-                <button id="btnName" class="btn btn-secondary" style='color:orange'>Witness your fate!</button>
-               </div>
+                <button id="btnName" class="btn btn-secondary" style='color:orange' onclick="show()">Witness your fate!</button>
+                <script>
+                    function show() {
+             
+                        /* Access image by id and change
+                        the display property to block*/
+                        document.getElementById('fox')
+                                .style.display = "block";
+             
+                        document.getElementById('fox')
+                                .style.display = "none";
+                    }
+                </script>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -36,6 +48,7 @@
     </div>
 
 </body>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4wV1H4Ji3DsCU4e2tF6sbjRpJumR2ETb36g&usqp=CAU" id="fox">
 </html>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
