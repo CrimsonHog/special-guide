@@ -24,19 +24,9 @@
             <div class="form-group">
              <label for="userName" style='color:orange'>Enter your name if you wish to know the truth.</label>
                 <input type="text" class="form-control" id="userName">
-                <button id="btnName" class="btn btn-secondary" style='color:orange' onclick="show()">Witness your fate!</button>
-                <script>
-                    function show() {
-             
-                        /* Access image by id and change
-                        the display property to block*/
-                        document.getElementById('fox')
-                                .style.display = "block";
-             
-                        document.getElementById('fox')
-                                .style.display = "none";
-                    }
-                </script>
+                <button id="btnName" class="btn btn-secondary" style='color:orange'onclick="show_image('https:encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAO5WkrA5Ch4x5POPKVniL9RxEn8FGg4XoLA&usqp=CAU', 250, 100)";>Witness your fate!</button>
+               <script> 
+            </script>
             </div>
         </div>
     </div>
@@ -48,7 +38,11 @@
     </div>
 
 </body>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4wV1H4Ji3DsCU4e2tF6sbjRpJumR2ETb36g&usqp=CAU" id="fox">
+
+
+
+
+
 </html>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
